@@ -89,6 +89,7 @@ Social Storefront Management
 >> git merge --no-ff develop
 >> resolve conflicts
 >> develop this feature
+>> git commit -am "xxxx developing xxxx"
 >> git commit -m "feature: feature-apply-bootstrap"
 >> git checkout develop
 >> git merge --no-ff feature-apply-bootstrap
