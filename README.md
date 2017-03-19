@@ -79,6 +79,7 @@ Social Storefront Management
 [x] https://webdesign.tutsplus.com/tutorials/baking-bootstrap-snippets-with-jade--cms-22798
 [ ] http://holderjs.com
 [x] http://code.runnable.com/U6IlNqsTu-cR6ZT8/holder-js-in-express-using-jade-for-node-js-and-hello-world
+[x] https://html2jade.org
 
 # Extra Tools
 [ ] http://danielkummer.github.io/git-flow-cheatsheet/

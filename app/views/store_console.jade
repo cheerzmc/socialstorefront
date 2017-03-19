@@ -1,0 +1,144 @@
+extends layout
+
+block content
+  
+
+  header.navbar.navbar-light.navbar-toggleable-md.bd-navbar(style="background-color:white;border:none;")    
+    nav.container
+      #bd-main-nav.collapse.navbar-collapse
+        ul.nav.navbar-nav
+          li.nav-item.active
+            a.nav-item.nav-link(href="", onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');") Thanakorn Piroonsith
+          li.nav-item.active
+            a.nav-item.nav-link(href="", onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');") Profile: Administrator
+          li.nav-item.active
+            a.btn.btn-warning(href="") Administrator
+  br
+    
+  .bd-pageheader(style="background-color:#FF9900;color:white;")
+    .container
+      br
+      h1 Inventory
+      p.lead Inventory Activity and Item Management
+      //script#_carbonads_js(async,type="text/javascript", href="https://cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=getbootstrapcom")
+  br
+  
+  .container-fluid
+    .row
+      .col-md-3
+        p
+          img.card-img-top(data-src='holder.js/100px150', src='...', alt='Product')
+        h3.text-muted New Item
+        br
+        form
+          .form-group
+            label(for='InputTitle') Name
+            input#InputTitle.form-control(type='text', aria-describedby='titleHelp', placeholder='Displayed title')
+            small#titleHelp.form-text.text-muted No symbols allowed
+          .form-group
+            label(for='InputTitle') Sku
+            input#InputTitle.form-control(type='text', aria-describedby='titleHelp', placeholder='Sku...')
+            small#titleHelp.form-text.text-muted 2/3D barcode
+          .form-group
+            label(for='InputTitle') Amount
+            input#InputTitle.form-control(type='text', aria-describedby='titleHelp', placeholder='Amount')
+            small#titleHelp.form-text.text-muted Inventory
+          .form-group
+            label(for='InputTitle') Price
+            input#InputTitle.form-control(type='text', aria-describedby='titleHelp', placeholder='Price')
+            small#titleHelp.form-text.text-muted THB xxxxxx (no separator)
+          .form-group
+            label(for='exampleTextarea') Description
+            textarea#exampleTextarea.form-control(rows='3')
+          .form-group
+            input#input-702.file-loading(name='kartik-input-702[]', type='file', multiple='true')
+            script.
+              $("#input-702").fileinput({
+              uploadUrl: "http://localhost/file-upload-single/1", // server upload action
+              uploadAsync: true,
+              minFileCount: 1,
+              maxFileCount: 5,
+              overwriteInitial: false,
+              initialPreview: [
+              "https://www.cpsclothing.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/c/1/c17smja030_1_.jpg",
+              "https://www.cpsclothing.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/c/1/c17smja030_2_.jpg"
+              ],
+              initialPreviewAsData: true, // identify if you are sending preview data only and not the raw markup
+              initialPreviewFileType: 'image', // image is the default and can be overridden in config below
+              initialPreviewConfig: [
+              {caption: "People-1.jpg", size: 576237, width: "120px", url: "/site/file-delete", key: 1},
+              {caption: "People-2.jpg", size: 932882, width: "120px", url: "/site/file-delete", key: 2},
+              ],
+              uploadExtraData: {
+              img_key: "1000",
+              img_keywords: "happy, places",
+              }
+              });
+            small#fileHelp.form-text.text-muted Multifile uploading
+          button.btn.btn-primary(type='submit') Add Item
+      .col-md-9
+        .row
+          .col-md-4
+            .card(style='width: 20rem;')
+              .card-block
+                img.card-img-top(data-src='holder.js/100px150', src='...', alt='Store')
+                .card-block
+                  h4.card-title Item Name
+                  h6.card-title {{Inventory}}
+              .card-block
+                a.btn.btn-primary(href='#') Manage
+          .col-md-4
+            .card(style='width: 20rem;')
+              .card-block
+                img.card-img-top(data-src='holder.js/100px150', src='...', alt='Store')
+                .card-block
+                  h4.card-title Item Name
+                  h6.card-title {{Inventory}}
+              .card-block
+                a.btn.btn-primary(href='#') Manage
+          .col-md-4
+            .card(style='width: 20rem;')
+              .card-block
+                img.card-img-top(data-src='holder.js/100px150', src='...', alt='Store')
+                .card-block
+                  h4.card-title Item Name
+                  h6.card-title {{Inventory}}
+              .card-block
+                a.btn.btn-primary(href='#') Manage
+        br
+        .row
+          .col-md-4
+            .card(style='width: 20rem;')
+              .card-block
+                img.card-img-top(data-src='holder.js/100px150', src='...', alt='Store')
+                .card-block
+                  h4.card-title Item Name
+                  h6.card-title {{Inventory}}
+              .card-block
+                a.btn.btn-primary(href='#') Manage
+          .col-md-4
+            .card(style='width: 20rem;')
+              .card-block
+                img.card-img-top(data-src='holder.js/100px150', src='...', alt='Store')
+                .card-block
+                  h4.card-title Item Name
+                  h6.card-title {{Inventory}}
+              .card-block
+                a.btn.btn-primary(href='#') Manage
+          .col-md-4
+            .card(style='width: 20rem;')
+              .card-block
+                img.card-img-top(data-src='holder.js/100px150', src='...', alt='Store')
+                .card-block
+                  h4.card-title Item Name
+                  h6.card-title {{Inventory}}
+              .card-block
+                a.btn.btn-primary(href='#') Manage
+
+  br            
+  
+  footer.bd-footer.text-muted
+   .container-fluid
+    .row
+      .col-md-12
+        //| Copyright © 2017 All Rights Reserved by Extentsoft Co.,Ltd.

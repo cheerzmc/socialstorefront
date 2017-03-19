@@ -1,0 +1,121 @@
+extends layout
+
+block content
+  
+
+  header.navbar.navbar-light.navbar-toggleable-md.bd-navbar(style="background-color:white;border:none;")    
+    nav.container
+      #bd-main-nav.collapse.navbar-collapse
+        ul.nav.navbar-nav
+          li.nav-item.active
+            a.nav-item.nav-link(href="", onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');") Thanakorn Piroonsith
+          li.nav-item.active
+            a.nav-item.nav-link(href="", onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');") Profile: Administrator
+          li.nav-item.active
+            a.btn.btn-warning(href="") Administrator
+  br
+    
+  .bd-pageheader(style="background-color:#FF9900;color:white;")
+    .container
+      br
+      h1 Business Store
+      p.lead Store Owner Management 
+      //script#_carbonads_js(async,type="text/javascript", href="https://cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=getbootstrapcom")
+  br
+
+  .container-fluid
+    .row
+      .col-md-3
+        //
+          <button type="button" class="btn btn-info">
+          <span class="glyphicon glyphicon-briefcase"></span> Dashboard
+          </button>
+        h3.text-muted New Store
+        br
+        form
+          .form-group
+            label(for='InputTitle') Store Title
+            input#InputTitle.form-control(type='text', aria-describedby='titleHelp', placeholder='Displayed title')
+            small#titleHelp.form-text.text-muted No symbols allowed
+          .form-group
+            label(for='exampleInputEmail1') Email address
+            input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder="Contact's email")
+            small#emailHelp.form-text.text-muted We'll never share your email.
+          .form-group
+            label(for='exampleTextarea') Description
+            textarea#exampleTextarea.form-control(rows='3')
+            small#fileHelp.form-text.text-muted Please fill in detail
+          .form-group
+            label(for='exampleInputFile') Storefront Image Alias
+            input#exampleInputFile.form-control-file(type='file', aria-describedby='fileHelp')
+            small#fileHelp.form-text.text-muted Displayed image on dashboard
+          button.btn.btn-primary(type='submit') Create
+      .col-md-9
+        form.bd-search.hidden-sm-down
+          input#search-input.form-control(type='text', placeholder='Search...', autocomplete='off')
+          #search-results.dropdown-menu.bd-search-results
+        br
+        .row
+          .col-md-4
+            .card(style='width: 20rem;')
+              .card-block
+                img.card-img-top(data-src='holder.js/100px150', src='...', alt='Store')
+                .card-block
+                  h4.card-title Store Title
+                  h6.card-title Contact
+              .card-block
+                a.btn.btn-primary(href='#') Manage
+          .col-md-4
+            .card(style='width: 20rem;')
+              .card-block
+                img.card-img-top(data-src='holder.js/100px150', src='...', alt='Store')
+                .card-block
+                  h4.card-title Store Title
+                  h6.card-title Contact
+              .card-block
+                a.btn.btn-primary(href='#') Manage
+          .col-md-4
+            .card(style='width: 20rem;')
+              .card-block
+                img.card-img-top(data-src='holder.js/100px150', src='...', alt='Store')
+                .card-block
+                  h4.card-title Store Title
+                  h6.card-title Contact
+              .card-block
+                a.btn.btn-primary(href='#') Manage
+        br
+        .row
+          .col-md-4
+            .card(style='width: 20rem;')
+              .card-block
+                img.card-img-top(data-src='holder.js/100px150', src='...', alt='Store')
+                .card-block
+                  h4.card-title Store Title
+                  h6.card-title Contact
+              .card-block
+                a.btn.btn-primary(href='#') Manage
+          .col-md-4
+            .card(style='width: 20rem;')
+              .card-block
+                img.card-img-top(data-src='holder.js/100px150', src='...', alt='Store')
+                .card-block
+                  h4.card-title Store Title
+                  h6.card-title Contact
+              .card-block
+                a.btn.btn-primary(href='#') Manage
+          .col-md-4
+            .card(style='width: 20rem;')
+              .card-block
+                img.card-img-top(data-src='holder.js/100px150', src='...', alt='Store')
+                .card-block
+                  h4.card-title Store Title
+                  h6.card-title Contact
+              .card-block
+                a.btn.btn-primary(href='#') Manage
+  br            
+  
+  footer.bd-footer.text-muted
+   .container-fluid
+    .row
+      .col-md-12
+        //| Copyright © 2017 All Rights Reserved by Extentsoft Co.,Ltd.
