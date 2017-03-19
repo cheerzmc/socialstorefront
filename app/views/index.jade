@@ -1,10 +1,140 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  
+
+  header.navbar.navbar-light.navbar-toggleable-md.bd-navbar(style="background-color:white;border:none;")    
+    nav.container
+      #bd-main-nav.collapse.navbar-collapse
+        ul.nav.navbar-nav
+          li.nav-item.active
+            a.nav-item.nav-link(href="", onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');") Thanakorn Piroonsith
+          li.nav-item.active
+            a.nav-item.nav-link(href="", onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');") Profile: Administrator
+          li.nav-item.active
+            a.btn.btn-warning(href="") Administrator
   br
-  button.btn.btn-lg.btn-default(type="button") Default
-  button.btn.btn-lg.btn-primary(type="button") Primary
-  button.btn.btn-lg.btn-success(type="button") Success
+    
+  .bd-pageheader(style="background-color:#FF9900;color:white;")
+    .container
+      br
+      h1 Dashboard
+      p.lead Product-oriented Activity  
+      //script#_carbonads_js(async,type="text/javascript", href="https://cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=getbootstrapcom")
+  br
       
+  .container-fluid
+    .row
+      .col-md-9
+        form.bd-search.hidden-sm-down
+          input#search-input.form-control(type="text", placeholder="Search...", autocomplete="off")
+        #search-results.dropdown-menu.bd-search-results
+      .col-md-3
+        button.btn.btn-info(type="button")
+          span.glyphicon.glyphicon-briefcase  Store
+  br
+    
+  .container-fluid
+    .row
+      .col-md-3
+        .card.text-center
+          .card-block
+            p
+              img.card-img-top(data-src="holder.js/100px390px", src="...", alt="Product")
+            a.btn.btn-primary(href="#") Console
+      .col-md-3
+        .card.text-center
+          .card-block
+            p
+              img.card-img-top(data-src="holder.js/100px390px", src="...", alt="Product")
+            a.btn.btn-primary(href="#") Console
+      .col-md-3
+        .card.text-center
+          .card-block
+            p
+              img.card-img-top(data-src="holder.js/100px390px", src="...", alt="Product")
+            a.btn.btn-primary(href="#") Console
+      .col-md-3
+        .card.text-center
+          .card-block
+            p
+              img.card-img-top(data-src="holder.js/100px390px", src="...", alt="Product")
+            a.btn.btn-primary(href="#") Console
+    br
+    
+    // Layout 
+    .row
+      .col-sm-3
+        .card
+          .card-block
+            .row
+              .col-md-6
+                p Stock  2/4/12
+                p Order  2/4/12
+                p CF/PD  2/4/12
+                p Profit $ 123,212
+                button.btn.btn-primary(type="button", onclick="location.href='console.html'") Console
+                //ul.nav.nav-pills(role="tablist")
+                //  li.active(role="presentation")
+                //    a(href="#") Messages
+                //      span.badge 42
+              .col-md-6
+                img.card-img-top(data-src="holder.js/100px150", src="...", alt="Product")
+
+      .col-sm-3
+        .card
+          .card-block
+            .row
+              .col-md-6
+                p Stock  2/4/12
+                p Order  2/4/12
+                p CF/PD  2/4/12
+                p Profit $ 123,212
+                button.btn.btn-primary(type="button", onclick="location.href='console.html'") Console
+                //ul.nav.nav-pills(role="tablist")
+                //  li.active(role="presentation")
+                //    a(href="#") Messages
+                //      span.badge 42
+              .col-md-6
+                img.card-img-top(data-src="holder.js/100px150", src="...", alt="Product")
+
+      .col-sm-3
+        .card
+          .card-block
+            .row
+              .col-md-6
+                p Stock  2/4/12
+                p Order  2/4/12
+                p CF/PD  2/4/12
+                p Profit $ 123,212
+                button.btn.btn-primary(type="button", onclick="location.href='console.html'") Console
+                //ul.nav.nav-pills(role="tablist")
+                //  li.active(role="presentation")
+                //    a(href="#") Messages
+                //      span.badge 42
+              .col-md-6
+                img.card-img-top(data-src="holder.js/100px150", src="...", alt="Product")
+
+      .col-sm-3
+        .card
+          .card-block
+            .row
+              .col-md-6
+                p Stock  2/4/12
+                p Order  2/4/12
+                p CF/PD  2/4/12
+                p Profit $ 123,212
+                button.btn.btn-primary(type="button", onclick="location.href='console.html'") Console
+                //ul.nav.nav-pills(role="tablist")
+                //  li.active(role="presentation")
+                //    a(href="#") Messages
+                //      span.badge 42
+              .col-md-6
+                img.card-img-top(data-src="holder.js/100px150", src="...", alt="Product")              
+  br
+  
+  footer.bd-footer.text-muted
+   .container-fluid
+    .row
+      .col-md-12
+        //| Copyright © 2017 All Rights Reserved by Extentsoft Co.,Ltd.
