@@ -75,6 +75,10 @@ Social Storefront Management
 [ ] http://stackoverflow.com/questions/5195859/push-a-tag-to-a-remote-repository-using-git
 [x] http://stackoverflow.com/questions/14348776/jade-how-to-include-a-javascript-file
 [ ] https://git-scm.com/book/id/v2/Git-Basics-Viewing-the-Commit-History
+[ ] http://google.co.th/search?site=&source=hp&q=jade+template+script+src&oq=jade+template+scr&gs_l=hp.3.1.0j0i22i30k1l4.845.7137.0.8672.27.20.3.4.5.0.137.1673.17j3.20.0....0...1c.1.64.hp..0.21.1294.0..35i39k1j0i131k1j33i160k1j0i13k1j0i22i10i30k1.YkY9vyuzgGQ
+[x] https://webdesign.tutsplus.com/tutorials/baking-bootstrap-snippets-with-jade--cms-22798
+[ ] http://holderjs.com
+[x] http://code.runnable.com/U6IlNqsTu-cR6ZT8/holder-js-in-express-using-jade-for-node-js-and-hello-world
 
 # Extra Tools
 [ ] http://danielkummer.github.io/git-flow-cheatsheet/
