@@ -59,6 +59,10 @@ Social Storefront Management
 > polar-falls-15972
 > https://polar-falls-15972.herokuapp.com/ | https://git.heroku.com/polar-falls-15972.git
 
+or
+
+> git remote add heroku https://git.heroku.com/polar-falls-15972.git
+
 28. git push heroku master  --> Deploy to Heroku server
 
 > remote:        https://polar-falls-15972.herokuapp.com/ deployed to Heroku
