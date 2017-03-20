@@ -174,6 +174,7 @@ Social Storefront Management
 >> (on develop) git merge --no-ff release-1.1.2
 >> git tag release-1.1.2-beta.1
 >> git branch -d release-1.1.2
+>> git push origin release-1.1.2-beta.1
 
 4. release candidate : specific beta version with potential to be a final product = all product features were completely designed, coded, tested through 1 or more beta cycle(s) with no known showstopper bugs
 > release-1.1.3-rc.1
