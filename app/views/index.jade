@@ -30,7 +30,7 @@ block content
           input#search-input.form-control(type="text", placeholder="Search...", autocomplete="off")
         #search-results.dropdown-menu.bd-search-results
       .col-md-3
-        button.btn.btn-info(type="button")
+        button.btn.btn-info(type="button", onclick="location.href='/store'")
           span.glyphicon.glyphicon-briefcase  Store
   br
     
@@ -41,7 +41,7 @@ block content
           .card-block
             p
               img.card-img-top(data-src="holder.js/100px390px", src="...", alt="Product")
-            a.btn.btn-primary(href="#") Console
+            a.btn.btn-primary(href="/console") Console
       .col-md-3
         .card.text-center
           .card-block
@@ -73,7 +73,7 @@ block content
                 p Order  2/4/12
                 p CF/PD  2/4/12
                 p Profit $ 123,212
-                button.btn.btn-primary(type="button", onclick="location.href='console.html'") Console
+                button.btn.btn-primary(type="button", onclick="location.href='/console'") Console
                 //ul.nav.nav-pills(role="tablist")
                 //  li.active(role="presentation")
                 //    a(href="#") Messages
