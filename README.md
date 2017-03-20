@@ -58,6 +58,9 @@ Social Storefront Management
 27. heroku create
 > polar-falls-15972
 > https://polar-falls-15972.herokuapp.com/ | https://git.heroku.com/polar-falls-15972.git
+> Creating app... done, ⬢ guarded-gorge-64221
+> https://guarded-gorge-64221.herokuapp.com/ | https://git.heroku.com/guarded-gorge-64221.git
+
 
 or
 
