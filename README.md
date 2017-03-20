@@ -80,17 +80,27 @@ Social Storefront Management
 [ ] http://holderjs.com
 [x] http://code.runnable.com/U6IlNqsTu-cR6ZT8/holder-js-in-express-using-jade-for-node-js-and-hello-world
 [x] https://html2jade.org
+[ ] https://www.npmjs.com/package/holderjs
+[ ] https://webdesign.tutsplus.com/tutorials/baking-bootstrap-snippets-with-jade--cms-22798
+[ ] https://naltatis.github.io/jade-syntax-docs/#comments
+[ ] http://rajasegar.github.io/JADE-Bootstrap/getting-started.html
+[ ] http://holderjs.com
+[ ] https://github.com/arodic/carbon.js/
+[x] https://www.w3schools.com/bootstrap/bootstrap_typography.asp
+[x] https://v4-alpha.getbootstrap.com/components/card/
 
 # Extra Tools
-[ ] http://danielkummer.github.io/git-flow-cheatsheet/
+[x] https://dashboard.heroku.com/apps/polar-falls-15972/activity
+[x] http://danielkummer.github.io/git-flow-cheatsheet/
+[x] http://plugins.krajee.com/file-advanced-usage-demo
 
 
 # Phase
 1. pre-Alpha : requirement analysis, design (milestone versions), develop, unit testing
 > release-1.1.0-pa.1 or release-1.1.0
 >> git checkout -b feature-apply-bootstrap develop
-  >> git checkout -b feature-convert-css-to-less develop
   >> git checkout -b feature-convert-html-to-jade develop
+  >> git checkout -b feature-add-links develop
 >> git merge --no-ff develop
 >> resolve conflicts
 >> develop this feature

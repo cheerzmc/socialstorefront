@@ -9,6 +9,9 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+var admin = express();
+
+app.set('title', 'Social Storefront');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -18,13 +21,15 @@ app.set('view engine', 'jade');
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+//app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(require('less-middleware')(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -43,5 +48,24 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+admin.on('mount', function(parent){
+  console.log('Admin Mounted');
+  console.log(parent);
+});
+
+/*
+admin.get('/', function(req,res){
+  console.log(admin.mountpath);
+  res.send('Admin Homepage');
+});
+
+app.use('/admin', admin);
+
+//app.all('*',requireAuthentication,loadUser);
+app.all('*',requireAuthentication);
+app.all('*',loadUser);
+app.all('/admin/*',requireAuthentication);
+*/
 
 module.exports = app;
